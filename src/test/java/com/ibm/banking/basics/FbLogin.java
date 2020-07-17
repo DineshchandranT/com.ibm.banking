@@ -30,6 +30,11 @@ public class FbLogin {
 	{
 		Assert.assertEquals(driver.getCurrentUrl(), "https://www.facebook.com/");
 	}
+	@Test
+	public void verifyTitle()
+	{
+		System.out.println(driver.getTitle());
+	}
 	
 	@AfterTest
 	public void tearDown()
